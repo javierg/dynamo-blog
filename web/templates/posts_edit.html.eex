@@ -1,0 +1,3 @@
+<h3><%= @item[:title] %></h3>
+<h6><%= @item[:created_at] %>
+<div><%= @item[:content] %></div>

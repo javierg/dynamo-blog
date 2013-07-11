@@ -1,0 +1,15 @@
+<h3><%= Keyword.get @user, :name %></h3>
+<ul>
+  <li><a href="/users/<%= @user[:id] %>/posts/new">New Post</a></li>
+</ul>
+
+<ul>
+  <%= lc post inlist @posts do %>
+  <li>
+    <a href="/users/<%= @user[:id] %>/posts/<%= post[:id] %>/edit">
+      <%= post[:title] %>
+    </a>
+  </li>
+  <% end %>
+</ul>
+

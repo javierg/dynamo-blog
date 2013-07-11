@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Tijuanate</title>
+</head>
+<body>
+  <div id="wraper">
+    <div id="top">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+    <div id="content">
+      <%= content_for(:template) %>
+    </div>
+    <div id="footer">
+      Made with Elixir Dymano. erlang all the way baby ;-)
+    </div>
+  </div>
+</body>
+</html>

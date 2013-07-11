@@ -1,0 +1,5 @@
+<ul>
+<%= lc user inlist @users do %>
+  <li><%= ViewHelpers.link_to "/users/#{user[:id]}", Keyword.get(user, :name) %></li>
+<% end %>
+</ul>
